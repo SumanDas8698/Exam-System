@@ -1,0 +1,7 @@
+# Deny direct access to sensitive files
+<FilesMatch "(database\.sql)$">
+    Require all denied
+</FilesMatch>
+
+# Prevent directory listing
+Options -Indexes
